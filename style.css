@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
 ​
 /* CSS VARIABLES */
-:root {
+:root { 
   --container-pd: 1.5rem 2.5rem;
   --container-pd-2: 1rem 1.3rem;
   --container-mt-mg: 1.5rem;
@@ -16,9 +16,199 @@
   box-sizing: border-box;
 }
 header {
-    width: 100%;
-    height: 50%;
- 
-  
+  width: 100%;
+  height: 800px;
+  background-image: url(images/desktop/image-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 
+}
+.header label {
+  color: white;
+ font-size: x-large;
+ font-weight: bolder;
+}
+.navbar nav ul {
+  margin-top: -10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 860px;
+  margin-right: 50px;
+  list-style: none;
+}
+.arrow h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+}
+.arrow img {
+  margin-top: 70px;
+  margin-left: 650px;
+}
+.transform{
+  margin-top: -150px;
+}
+.transform h2 {
+  font-weight: 900px;
+  font-size: 50px;
+  padding: 30px;
+  margin-left: 50px;
+  text-size-adjust: 30px;
+}
+.transform p {
+  font-size: larger;
+  padding-left: 30px;
+  margin-left: 50px;
+  color: gray;
+}
+.transform h5 {
+  margin-top: 40px;
+  padding-left: 40px;
+  margin-left: 50px;
+}
+.transform img {
+  margin-left: 50%;
+  margin-top: -370px;
+  width: 50%;
+  height: 50%;
+}
+.standout img{
+  width: 50%;
+  margin-top: -5px;
+}
+.standout h2 {
+  margin-top: -420px;
+margin-left: 800px;
+font-weight: 900px;
+font-size: 50px;
+}
+.standout p {
+  margin-left: 800px;
+}
+.standout h5 {
+  margin-left: 800px;
+}
+.graphicdesign {
+  margin-top: 160px;
+  width: 50%;
+  text-align: center;
+}
+.graphicdesign img {
+  width: 100%;
+}
+.graphicdesign h3 {
+  margin-top: -200px;
+}
+.photography {
+  margin-top: -470px;
+}
+.photography img {
+  width: 50%;
+  margin-left: 50%;
+}
+.photography h3 {
+  margin-top: -200px;
+  margin-left: 50%;
+  text-align: center;
+}
+.photography p {
+  margin-left: 50%;
+  text-align: center;
+}
+.plain {
+  margin-top: 100px;
+}
+.plain h3 {
+  text-align: center;
+  color: gray ;
+}
+.plain ul {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+}  
+.plain img {
+  border-radius: 50%;
+}
+.milk {
+  margin-top: 150px;
+  width: 25%;
+  height: 50%;
+}
+.milk img{
+  width: 100%;
+}
+.orange {
+  margin-left: 25%;
+  margin-top: -418px;
+  width: 25%;
+  height: 50%;
+}
+.orange img{
+  width: 100%;
+}
+.cones {
+  margin-left: 50%;
+  margin-top: -417px;
+  width: 25%;
+}
+.cones img {
+  width: 100%;
+}
+.sugar{
+  margin-left: 75%;
+  margin-top: -418px;
+  width: 25%;
+  height: 50%;
+}
+.sugar img {
+  width: 100%;
+}
+footer {
+  height: 50%;
+  margin-top: -40px;
+  color: rgb(7, 112, 77);
+  background-color: rgb(127, 201, 186);
+}
+footer h3 {
+  text-align: center;
+  font-weight: 15px;
+  font-size: xx-large;
+}
+.anchors {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  margin-left: -35px;
+
+}
+.anchors a{
+  text-decoration: none;
+  color: rgb(7, 112, 77);
+  margin-left: 50px;
+}
+.anchors a:hover {
+  color: white;
+}
+.icons {
+  margin-top: 50px;
+display: flex;
+text-align: center;
+justify-content:center;
+}
+.icons a {
+color: rgb(7, 112, 77);
+margin: 8px;
+}
+.icons a:hover{
+  color: white;
 }
