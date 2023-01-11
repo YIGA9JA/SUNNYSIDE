@@ -11,9 +11,7 @@
 ​
 /* INITIALIZING CSS */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  margin: 0px;
 }
 header {
   width: 100%;
@@ -23,13 +21,14 @@ header {
   background-repeat: no-repeat;
 
 }
-.header label {
+ label {
   color: white;
  font-size: x-large;
  font-weight: bolder;
+ 
 }
 .navbar nav ul {
-  margin-top: -10px;
+  margin-top: -20px;
   color: white;
   display: flex;
   flex-direction: row;
@@ -38,6 +37,19 @@ header {
   margin-left: 860px;
   margin-right: 50px;
   list-style: none;
+}
+ button {
+  font-size: smaller;
+  font-weight: bold;
+  margin-top: -7px;
+border: 0px;
+  text-transform: uppercase;
+  padding: 8px;
+  background-color: white;
+  border-radius: 30px;
+}
+button:hover{
+  background-color: rgb(108, 223, 248);
 }
 .arrow h1 {
   margin-top: 100px;
