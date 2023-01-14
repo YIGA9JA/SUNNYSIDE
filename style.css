@@ -15,6 +15,8 @@
   margin: 0px;
 }
 header {
+
+  position: relative;
   margin-top: -20px;
   width: 100%;
   height: 800px;
@@ -63,6 +65,7 @@ button:hover{
   text-align: center;
 }
 .arrow img {
+  position: relative;
   margin-top: 70px;
   margin-left: 650px;
 }
@@ -88,12 +91,13 @@ button:hover{
   margin-left: 50px;
 }
 .transform img {
-  margin-left: 50%;
-  margin-top: -370px;
+  position: relative;
+  left: 50%;
+  margin-top: -372px;
   width: 50%;
   height: 50%;
 }
-.standout img{
+.standout img{ 
   width: 50%;
   margin-top: -5px;
 }
@@ -104,6 +108,7 @@ font-weight: 900px;
 font-size: 50px;
 }
 .standout p {
+  color: gray;
   margin-left: 800px;
 }
 .standout h5 {
@@ -118,6 +123,7 @@ font-size: 50px;
   width: 100%;
 }
 .graphicdesign h3 {
+  text-align: center;
   margin-top: -200px;
 }
 .photography {
@@ -137,6 +143,7 @@ font-size: 50px;
   text-align: center;
 }
 .plain {
+  position: relative;
   margin-top: 100px;
 }
 .plain h3 {
@@ -144,6 +151,7 @@ font-size: 50px;
   color: gray ;
 }
 .plain ul {
+  color: gray;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -151,42 +159,21 @@ font-size: 50px;
   text-align: center;
   list-style: none;
 }  
+.plain strong {
+  color: black;
+}
 .plain img {
+  position: relative;
   border-radius: 50%;
 }
-.milk {
-  margin-top: 150px;
-  width: 25%;
-  height: 50%;
+.multiimg ul{
+  display: flex;
+  list-style: none;
 }
-.milk img{
-  width: 100%;
-}
-.orange {
-  margin-left: 25%;
-  margin-top: -418px;
-  width: 25%;
-  height: 50%;
-}
-.orange img{
-  width: 100%;
-}
-.cones {
-  margin-left: 50%;
-  margin-top: -417px;
-  width: 25%;
-}
-.cones img {
-  width: 100%;
-}
-.sugar{
-  margin-left: 75%;
-  margin-top: -418px;
-  width: 25%;
-  height: 50%;
-}
-.sugar img {
-  width: 100%;
+.multiimg img {
+  margin-top: 15px;
+  margin-left: -40px;
+  width: 112%;
 }
 footer {
   height: 50%;
@@ -229,24 +216,97 @@ margin: 8px;
 }
 
 
-@media (min-width: 450px) and (max-width: 500px) {
+@media (min-width: 450px) and (max-width: 600px)
+{
+  header {
+    height: autos;
+    position: relative;
+  }
  nav {
-  width: 100%;
+width: 100%;
  } 
-header {
-  width: 100%;
-  height: 350px;
-}
-header h2 {
-  margin-top: 0px;
-}
-nav > ul{
+ nav>ul{
   display: none;
+ }
+ .arrow h1 {
+  margin: auto;
+  font-size: large;
+  font-weight: 50px;
+ }
+ .arrow img {
+  position: absolute;
+  width: 100%;
+  margin-top: ;
+ }
+ .transform img {
+  height: auto;
+  position: absolute;
+  width: 97%;
+  margin-left: -267px;
+  margin-top: -815px;
+ }
+ .transform {
+  right: 10px;
+ }
+ .transform h2 {
+  margin-left: auto;
+text-align: center;
+ }
+ .transform p {
+  margin-left: auto;
+  text-align: center;
+ }
+ .transform h5 {
+  margin-left: auto;
+  text-align: center;
+ }
+ .standout img {
+  width: 100%;
+ }
+ .standout h2 {
+  margin-top: 100px;
+  margin-left: 0px;
+  text-align: center;
 }
-.arrow h1 {
-  font-size: small;
-  font-weight: lighter;
+.standout p {
+  margin-left: auto;
+  text-align: center;
 }
-.arrow img{
-  text-align: centers;
+.standout h5 {
+  margin-left: auto;
+  text-align: center;
+}
+.graphicdesign img {
+  margin-top: -75px;
+  margin-left: auto;
+  width: 200%;
+}
+.graphicdesign h3 {
+  text-align: center;
+width: 200%;
+margin-top: -150px;
+}
+.graphicdesign p {
+  text-align: center;
+  width: 200%;
+}
+.photography {
+  margin-top: 47px;
+  margin-left: -100%;
+}
+.photography h3 {
+  margin-top: -150px;
+}
+
+.plain ul {
+  display: inline;
+  margin-top: 800px;
+}
+.multiimg {
+  width: 104.5%;
+}
+footer {
+  margin-top: opx;
+}
+
 }
