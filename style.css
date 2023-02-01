@@ -15,48 +15,54 @@
   margin: 0px;
 }
 header {
-
-  position: relative;
-  margin-top: -20px;
   width: 100%;
-  height: 800px;
-  background-image: url(images/desktop/image-header.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-
+  height: 700px;
+ background-image: url(images/desktop/image-header.jpg);
+ background-size: cover;
 }
- .header h2 {
+nav {
+  margin-top: 0px;
+  display: flex;
+}
+label {
   margin-left: 30px;
   color: white;
  font-size: x-large;
  font-weight: bolder;
- 
+} 
+.dropdown {
+margin-left: 40%;
 }
-.navbar nav ul {
-  margin-top: -30px;
+.dropdown label {
+  display: none;
+}
+#toggle {
   color: white;
+  display: none;
+}
+.menu{
+  margin-left: 55%;
+}
+.menu ul {
+  list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-  margin-left: 860px;
-  margin-right: 50px;
-  list-style: none;
+ gap: 30px;
+ color: white;
 }
  button {
   font-size: smaller;
   font-weight: bold;
-  margin-top: -7px;
 border: 0px;
   text-transform: uppercase;
   padding: 8px;
-  background-color: white;
   border-radius: 30px;
 }
 button:hover{
   background-color: rgb(108, 223, 248);
 }
 .arrow h1 {
+  letter-spacing: 8px;
   margin-top: 100px;
   color: white;
   font-size: 50px;
@@ -65,12 +71,40 @@ button:hover{
   text-align: center;
 }
 .arrow img {
-  position: relative;
-  margin-top: 70px;
-  margin-left: 650px;
+margin-top: 45px;
+margin-left: 50%;
 }
+
+
+@media only screen and (max-width: 500px){
+  header{
+height: 300px;
+  }
+  .dropdown label{
+    display: block;
+  }
+  .menu {
+   text-align: center; 
+   width: 100%;
+   display: none;
+  }
+  .menu ul{
+    display: block;
+  }
+  #toggle {
+    margin-left: 30%;
+    display: ;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    margin-left: 15px;
+  }
+  }
+  
+
+
 .transform{
-  margin-top: -150px;
+  margin-top: -76px;
 }
 .transform h2 {
   font-weight: 900px;
@@ -91,43 +125,57 @@ button:hover{
   margin-left: 50px;
 }
 .transform img {
+  margin-top: -387px;
   position: relative;
   left: 50%;
-  margin-top: -372px;
   width: 50%;
   height: 50%;
 }
+
+
+@media screen (min-width: 200px) and (max-width: 400px) {
+
+}
+
+
+
+
 .standout img{ 
   width: 50%;
   margin-top: -5px;
 }
-.standout h2 {
-  margin-top: -420px;
-margin-left: 800px;
+.standouttxt {
+  margin-left: 50%;
+  margin-top: -40%;
+}
+.standouttxt h2 {
+margin-left: 70px;
 font-weight: 900px;
 font-size: 50px;
 }
-.standout p {
+.standouttxt p {
+  margin-left: 70px;
   color: gray;
-  margin-left: 800px;
 }
-.standout h5 {
-  margin-left: 800px;
+.standouttxt h5 {
+  margin-left: 70px;
 }
 .graphicdesign {
   margin-top: 160px;
   width: 50%;
-  text-align: center;
 }
 .graphicdesign img {
   width: 100%;
 }
 .graphicdesign h3 {
-  text-align: center;
   margin-top: -200px;
+  text-align: center;
+}
+.graphicdesign p {
+  text-align: center;
 }
 .photography {
-  margin-top: -470px;
+  margin-top: -436px;
 }
 .photography img {
   width: 50%;
@@ -167,13 +215,12 @@ font-size: 50px;
   border-radius: 50%;
 }
 .multiimg ul{
-  display: flex;
+  margin-left: -40px;
   list-style: none;
+  display: flex;
 }
 .multiimg img {
-  margin-top: 15px;
-  margin-left: -40px;
-  width: 112%;
+width: 100%;
 }
 footer {
   height: 50%;
@@ -213,100 +260,4 @@ margin: 8px;
 }
 .icons a:hover{
   color: white;
-}
-
-
-@media (min-width: 450px) and (max-width: 600px)
-{
-  header {
-    height: autos;
-    position: relative;
-  }
- nav {
-width: 100%;
- } 
- nav>ul{
-  display: none;
- }
- .arrow h1 {
-  margin: auto;
-  font-size: large;
-  font-weight: 50px;
- }
- .arrow img {
-  position: absolute;
-  width: 100%;
-  margin-top: ;
- }
- .transform img {
-  height: auto;
-  position: absolute;
-  width: 97%;
-  margin-left: -267px;
-  margin-top: -815px;
- }
- .transform {
-  right: 10px;
- }
- .transform h2 {
-  margin-left: auto;
-text-align: center;
- }
- .transform p {
-  margin-left: auto;
-  text-align: center;
- }
- .transform h5 {
-  margin-left: auto;
-  text-align: center;
- }
- .standout img {
-  width: 100%;
- }
- .standout h2 {
-  margin-top: 100px;
-  margin-left: 0px;
-  text-align: center;
-}
-.standout p {
-  margin-left: auto;
-  text-align: center;
-}
-.standout h5 {
-  margin-left: auto;
-  text-align: center;
-}
-.graphicdesign img {
-  margin-top: -75px;
-  margin-left: auto;
-  width: 200%;
-}
-.graphicdesign h3 {
-  text-align: center;
-width: 200%;
-margin-top: -150px;
-}
-.graphicdesign p {
-  text-align: center;
-  width: 200%;
-}
-.photography {
-  margin-top: 47px;
-  margin-left: -100%;
-}
-.photography h3 {
-  margin-top: -150px;
-}
-
-.plain ul {
-  display: inline;
-  margin-top: 800px;
-}
-.multiimg {
-  width: 104.5%;
-}
-footer {
-  margin-top: opx;
-}
-
 }
