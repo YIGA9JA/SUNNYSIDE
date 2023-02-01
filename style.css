@@ -21,7 +21,6 @@ header {
  background-size: cover;
 }
 nav {
-  margin-top: 0px;
   display: flex;
 }
 label {
@@ -31,7 +30,7 @@ label {
  font-weight: bolder;
 } 
 .dropdown {
-margin-left: 40%;
+margin-left: 60%;
 }
 .dropdown label {
   display: none;
@@ -41,7 +40,7 @@ margin-left: 40%;
   display: none;
 }
 .menu{
-  margin-left: 55%;
+  width: 100%;
 }
 .menu ul {
   list-style: none;
@@ -51,6 +50,7 @@ margin-left: 40%;
  color: white;
 }
  button {
+  margin-top: -10px;
   font-size: smaller;
   font-weight: bold;
 border: 0px;
@@ -63,7 +63,7 @@ button:hover{
 }
 .arrow h1 {
   letter-spacing: 8px;
-  margin-top: 100px;
+  margin-top: 130px;
   color: white;
   font-size: 50px;
   font-weight: bolder;
@@ -76,12 +76,15 @@ margin-left: 50%;
 }
 
 
-@media only screen and (max-width: 500px){
+@media (min-width: 400px) and (max-width: 500px){
   header{
-height: 300px;
+height: 650px;
+background-size: cover;
+background-repeat: no-repeat;
   }
   .dropdown label{
     display: block;
+    margin-left: 0%;
   }
   .menu {
    text-align: center; 
@@ -89,15 +92,29 @@ height: 300px;
    display: none;
   }
   .menu ul{
-    display: block;
+    width: 230px;
+    height: 50%;
+    padding: 15px;
+    margin-left: -100%;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    background-color: white;
+    border-top-right-radius: -23px;
   }
-  #toggle {
-    margin-left: 30%;
-    display: ;
+  button:hover {
+    background-color: yellow;
   }
   #toggle:checked + .menu {
     display: block;
     margin-left: 15px;
+  }
+  .arrow h1 {
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 90px;
+    font-weight: bold;
+    font-size: 42px;
   }
   }
   
@@ -106,25 +123,25 @@ height: 300px;
 .transform{
   margin-top: -76px;
 }
-.transform h2 {
+.transformtxt h2 {
   font-weight: 900px;
   font-size: 50px;
   padding: 30px;
   margin-left: 50px;
   text-size-adjust: 30px;
 }
-.transform p {
+.transformtxt p {
   font-size: larger;
   padding-left: 30px;
   margin-left: 50px;
   color: gray;
 }
-.transform h5 {
+.transformtxt h5 {
   margin-top: 40px;
   padding-left: 40px;
   margin-left: 50px;
 }
-.transform img {
+.transformimg img {
   margin-top: -387px;
   position: relative;
   left: 50%;
@@ -133,12 +150,34 @@ height: 300px;
 }
 
 
-@media screen (min-width: 200px) and (max-width: 400px) {
+@media (min-width: 400px) and (max-width: 500px){
+.transform {
+display: flex;
+flex-direction: column-reverse;
+}
+.transformimg {
+  width: 100%;
+  height: 700px;
 
 }
-
-
-
+.transformimg img{
+  margin-top: 70px;
+  width: 100%;
+    left: 0px;
+}
+.transform h2 {
+  margin-top: -300px;
+  text-align: center;
+}
+.transform p {
+  margin-left: 0px;
+  text-align: center;
+}
+.transform h5 {
+  margin-left: 0px;
+  text-align: center;
+} 
+}
 
 .standout img{ 
   width: 50%;
@@ -160,11 +199,22 @@ font-size: 50px;
 .standouttxt h5 {
   margin-left: 70px;
 }
+@media (min-width: 400px) and (max-width: 500px) {
+  .standout img {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .standouttxt{
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+}
 .graphicdesign {
-  margin-top: 160px;
   width: 50%;
 }
 .graphicdesign img {
+  margin-top: 100px;
   width: 100%;
 }
 .graphicdesign h3 {
@@ -174,8 +224,16 @@ font-size: 50px;
 .graphicdesign p {
   text-align: center;
 }
+
+@media (min-width: 400px) and (max-width: 500px){
+  .graphicdesign {
+    width: 100%;
+    margin-top: -10px;
+  }
+}
+
 .photography {
-  margin-top: -436px;
+  margin-top: -470px;
 }
 .photography img {
   width: 50%;
@@ -189,6 +247,24 @@ font-size: 50px;
 .photography p {
   margin-left: 50%;
   text-align: center;
+}
+
+@media (min-width: 400px) and (max-width: 500px){
+  .photography {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .photography img{
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .photography h3 {
+    margin-left: 0px;
+  }
+  .photography p {
+    margin-left: 0px;
+  }
 }
 .plain {
   position: relative;
@@ -214,17 +290,44 @@ font-size: 50px;
   position: relative;
   border-radius: 50%;
 }
+
+
+@media (min-width: 400px) and (max-width: 500px) {
+.plain ul {
+  flex-direction: column;
+}
+}
+.multiimg {
+  margin-top: 20px;
+  display: flex;
+}
 .multiimg ul{
   margin-left: -40px;
   list-style: none;
+  width: 50%;
   display: flex;
 }
 .multiimg img {
 width: 100%;
 }
+
+
+@media (min-width: 400px) and (max-width: 500px){
+  .multiimg {
+flex-direction: column;
+  }
+  .multiimg ul {
+    width: 100%;
+    margin-bottom: -20px;
+  }
+  .multiimg img {
+    width: 100%;
+  }
+
+}
 footer {
   height: 50%;
-  margin-top: -40px;
+  margin-top: -52px;
   color: rgb(7, 112, 77);
   background-color: rgb(127, 201, 186);
 }
